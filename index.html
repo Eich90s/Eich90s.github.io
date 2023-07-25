@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio | EICH</title>
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-
-    <!-- Bootstrap CCS Offline -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <!-- Bootstrap Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-
-    <!-- MyCSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EICH</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-danger fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><i class="bi bi-robot"></i></a>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+          <span class="h3 fw-bold d-block d-lg-none">EICH</span>
+          <img
+            src="./assets/img/2.jpg"
+            class="d-none d-lg-block rounded-circle"
+            alt=""
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,17 +33,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -61,241 +53,463 @@
         </div>
       </div>
     </nav>
-    <!-- Navbar End -->
+    <!-- /navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img
-        src="img/cakep.jpg"
-        alt="cakep"
-        width="200"
-        class="rounded-circle img-thumbnail"
-      />
-      <h1 class="display-4">EICH</h1>
-      <p class="lead">Student | Unemployment</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L30,58.7C60,85,120,139,180,149.3C240,160,300,128,360,101.3C420,75,480,53,540,69.3C600,85,660,139,720,165.3C780,192,840,192,900,181.3C960,171,1020,149,1080,128C1140,107,1200,85,1260,90.7C1320,96,1380,128,1410,144L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Jumbotron End -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-4">
-            <p>
-              I am Eich, a diligent and ambitious student. Currently, I find
-              myself in a phase of unemployment, but I have a strong desire to
-              continuously grow and become better. Despite facing unemployment,
-              I refuse to give up. I have a strong determination to keep
-              learning and improving myself. I believe that self-development is
-              the key to achieving future success. I utilize my free time to
-              expand my knowledge through self-guided learning. I read books,
-              explore online resources, and use educational platforms to acquire
-              new skills. I also actively seek guidance from professionals in
-              the industry who can provide valuable insights.
+    <!-- content wrapper -->
+    <div id="content-wrapper">
+      <!-- home -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="col-lg-10">
+            <h1 class="display-4 fw-bold" data-aos="fade-up">
+              I'M A <span class="text-brand">UI/UX DESIGNER</span> FROM MATARAM,
+              INDONESIA
+            </h1>
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+              I'm Eich, and I craft high-performing and delightful experiences
+              tailored and conversion-focused
             </p>
-          </div>
-          <div class="col-4">
-            <p>
-              Although my current situation is less than ideal, I see it as an
-              opportunity to explore different fields and sharpen my creativity.
-              I believe that every challenge is an opportunity to grow and
-              learn. I understand that the journey to success requires
-              perseverance and resilience. I don't give up in the face of
-              obstacles and temporary rejections. I view each failure as a
-              stepping stone towards achieving future success. I am confident
-              that with determination and self-belief, I will reach my goals. I
-              continue to strive and seek opportunities to grow into the best
-              version of myself.
-            </p>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <a href="#work" class="btn btn-brand me-3">Explore my work</a>
+              <a href="#" class="link-custom">Call +62 878 6099 1389</a>
+            </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fa8072"
-          fill-opacity="1"
-          d="M0,64L30,96C60,128,120,192,180,192C240,192,300,128,360,90.7C420,53,480,43,540,53.3C600,64,660,96,720,117.3C780,139,840,149,900,149.3C960,149,1020,139,1080,128C1140,117,1200,107,1260,117.3C1320,128,1380,160,1410,176L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- About End -->
+      </section>
+      <!-- /home -->
 
-    <!-- Project -->
-    <section id="project">
-      <div class="container">
-        <div class="row text-center mb-3 text-white">
-          <div class="col">
-            <h2>My Project</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/1.jpg"
-                class="card-img-top"
-                alt="project1"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+      <!-- services -->
+      <section id="services" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">SERVICES</h6>
+              <h1>Services That I Provide</h1>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/2.jpg"
-                class="card-img-top"
-                alt="project2"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-feather"></i>
+                </div>
+                <h4 class="mt-4 mb-2">UI/UX Design</h4>
+                <p>
+                  UI/UX design refers to the process of creating user interfaces
+                  and user experiences for digital products, such as websites,
+                  mobile applications, software, and more. The goal of UI/UX
+                  design is to enhance user satisfaction and usability by
+                  focusing on how users interact with the product and ensuring
+                  it is visually appealing and easy to use.
                 </p>
+                <a href="#" class="link-custom">Read More</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/3.jpg"
-                class="card-img-top"
-                alt="project3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-pencil-ruler"></i>
+                </div>
+                <h4 class="mt-4 mb-2">Branding</h4>
+                <p>
+                  Branding is the process of creating a unique and consistent
+                  identity for a product, service, company, or individual. It
+                  involves crafting a set of elements, logo, design, colors, and
+                  messaging, that differentiate the entity from its competitors
+                  and leave a lasting impression on its target audience.
+                  Branding is not just about the visual aspects; it also
+                  encompasses the emotions.
                 </p>
+                <a href="#" class="link-custom">Read More</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/3.jpg"
-                class="card-img-top"
-                alt="project3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-laptop-code"></i>
+                </div>
+                <h4 class="mt-4 mb-2">Web Disigning</h4>
+                <p>
+                  Web designing refers to the process of creating and designing
+                  websites for the internet. It encompasses a range of skills
+                  and disciplines that come together to produce a visually
+                  appealing, user-friendly, and functional website. Web
+                  designers use various tools, technologies, and design
+                  principles to craft the layout, user interface, and overall
+                  user experience of a website.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/3.jpg"
-                class="card-img-top"
-                alt="project3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <a href="#" class="link-custom">Read More</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L30,53.3C60,75,120,117,180,133.3C240,149,300,139,360,117.3C420,96,480,64,540,53.3C600,43,660,53,720,69.3C780,85,840,107,900,138.7C960,171,1020,213,1080,234.7C1140,256,1200,256,1260,234.7C1320,213,1380,171,1410,149.3L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
+      </section>
+      <!-- /sevices -->
 
-    <!-- Project End -->
+      <!-- work -->
+      <section id="work" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">WORK</h6>
+              <h1>My Recent Project</h1>
+            </div>
+          </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+          <div class="row gy-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    src="./assets/img/project-1.jpg"
+                    class="rounded-4"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Innovation that exceeds expectations. Astra is a true
+                    template equiqed with all elements you could ever need to
+                    put together
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    src="./assets/img/project-2.png"
+                    class="rounded-4"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Innovation that exceeds expectations. Astra is a true
+                    template equiqed with all elements you could ever need to
+                    put together
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    src="./assets/img/project-3.png"
+                    class="rounded-4"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Innovation that exceeds expectations. Astra is a true
+                    template equiqed with all elements you could ever need to
+                    put together
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    src="./assets/img/project-4.png"
+                    class="rounded-4"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Innovation that exceeds expectations. Astra is a true
+                    template equiqed with all elements you could ever need to
+                    put together
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Full name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  aria-describedby="name"
-                />
+      </section>
+      <!-- /work -->
+
+      <!-- about -->
+      <section id="about" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT</h6>
+              <h1>My Education & Experience</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                Education
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Master of Software Engineering</h4>
+                    <p class="text-brand mb-2">Mars University</p>
+                    <p class="mb-0">
+                      A Master of Software Engineering (MSE) is a graduate-level
+                      degree program that focuses on advanced studies and
+                      specialization in the field of software engineering. It is
+                      designed for individuals who already have a background in
+                      computer science or a related field and want to deepen
+                      their knowledge and expertise in software development and
+                      engineering practices.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Bachelor of Information Systems</h4>
+                    <p class="text-brand mb-2">Nahdlatul Ulama University</p>
+                    <p class="mb-0">
+                      A Bachelor of Information Systems (BIS) is an
+                      undergraduate degree program that focuses on the study of
+                      information systems, technology, and their application in
+                      various organizations and industries. It is a
+                      multidisciplinary field that combines elements of
+                      business, computer science, and management to address the
+                      challenges related to information management.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Computer and Network Engineering</h4>
+                    <p class="text-brand mb-2">Babakan Hight School</p>
+                    <p class="mb-0">
+                      Computer and Network Engineering is a field of study that
+                      combines computer engineering and network engineering. It
+                      involves the design, development, implementation, and
+                      management of computer systems and networks. This
+                      interdisciplinary approach allows professionals in this
+                      field to have a comprehensive understanding of both
+                      hardware and software aspects, as well as the networking.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="email"
-                />
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                Experience
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>UI/UX Designer</h4>
+                    <p class="text-brand mb-2">Mars Corp</p>
+                    <p class="mb-0">
+                      A UI/UX designer is a professional who specializes in
+                      creating user interfaces (UI) and user experiences (UX)
+                      for digital products, such as websites, mobile
+                      applications, software, and other interactive experiences.
+                      The role of a UI/UX designer is to ensure that the digital
+                      product is visually appealing, intuitive to use, and
+                      provides a seamless and delightful experience for its
+                      users.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Data Analyst</h4>
+                    <p class="text-brand mb-2">E Corp</p>
+                    <p class="mb-0">
+                      A data analyst is a professional who collects, processes,
+                      and analyzes large sets of data to derive meaningful
+                      insights and help businesses make data-driven decisions.
+                      Data analysts play a crucial role in today's data-driven
+                      world, as they help organizations make sense of the vast
+                      amount of data they generate and gather from various
+                      sources.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>IT Support</h4>
+                    <p class="text-brand mb-2">Mars Inc</p>
+                    <p class="mb-0">
+                      IT support, also known as technical support or help desk
+                      support, refers to the services provided to end-users or
+                      customers to assist them with technical issues related to
+                      hardware, software, networks, and other IT-related
+                      problems. The primary goal of IT support is to ensure that
+                      computer systems and technology function smoothly, and
+                      users can resolve their technical challenges effectively.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-danger">Send</button>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#dc3545"
-          fill-opacity="1"
-          d="M0,160L30,176C60,192,120,224,180,213.3C240,203,300,149,360,117.3C420,85,480,75,540,85.3C600,96,660,128,720,128C780,128,840,96,900,101.3C960,107,1020,149,1080,154.7C1140,160,1200,128,1260,106.7C1320,85,1380,75,1410,69.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Contact End -->
+      </section>
+      <!-- /about -->
 
-    <!-- Footer -->
-    <footer class="bg-danger text-white text-center pb-5">
-      <p>
-        Created with <i class="bi bi-suit-heart-fill"></i> by
-        <a href="https://www.instagram.com/eich90s/" class="text-white fw-bold"
-          >eich90s</a
-        >
-      </p>
-    </footer>
-    <!-- Footer End -->
+      <!-- contact -->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Interested in working together? Let's talk</h1>
+            </div>
 
-    <!-- Bootsrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="alert alert-success alert-dismissible fade show d-none my-alert"
+                role="alert"
+              >
+                <strong>Thank You!</strong> We have received your message.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
 
-    <!-- Bootstrap Offline -->
-    <script src="js/bootstrap.js"></script>
+              <form action="#" class="row g-lg-3 gy-3" name="contact-form">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Name"
+                    name="nama"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Subject"
+                    name="subject"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <textarea
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter Your Message"
+                    name="pesan"
+                  ></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <button type="submit" class="btn btn-brand btn-kirim">
+                    Contact Me
+                  </button>
+                  <button
+                    class="btn btn-brand btn-loading d-none btn-loading"
+                    type="button"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
+                    Loading...
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+
+      <!-- footer -->
+      <footer class="py-3">
+        <div class="container">
+          <div class="row gy-2 justify-content-center">
+            <div class="col-auto">
+              <p class="mb-0">Created by &copy; EICH90S</p>
+            </div>
+            <div class="col-12 justify-content-center text-center">
+              <div class="sosial-icons">
+                <a href="https://www.instagram.com/eich90s/"
+                  ><i class="lab la-instagram"></i
+                ></a>
+                <a href="https://github.com/HusnanHadi"
+                  ><i class="lab la-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /content wrapper -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxnHWwMtug3SBBM-y_N12xCKDhgDFPpLU1VertLD0YE1WPzjPzMK_O9545sd4Ei4jqJ7A/exec";
+      const form = document.forms["contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
